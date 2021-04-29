@@ -1,0 +1,23 @@
+<%- include('../../components/header') %>
+
+<%- include('../../components/navbar') %>
+
+<div class="container">
+    <div class="card mt-5">
+        <br>
+        <div class="card-header">
+            <h3>Criação de Usuário</h3>
+        </div>
+        <div class="card-body">
+            <form action="/users/create" method="POST">
+                <input class="form-control" type="email" name="email" placeholder="@exemplo.com">
+                <br>
+                <input class="form-control" type="password" name="password" placeholder="*******">
+                <br>
+                <button class="btn btn-success" type="submit">Criar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('../../components/footer') %>
